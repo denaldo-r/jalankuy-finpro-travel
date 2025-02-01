@@ -1,9 +1,10 @@
-import LandingPage from "./pages/LandingPage";
+import React from "react";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <div>
-      <LandingPage />
+    <div className="App">
+      <AppRoutes />
     </div>
   );
 }
