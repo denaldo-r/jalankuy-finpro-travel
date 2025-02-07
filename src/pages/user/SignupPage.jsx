@@ -23,10 +23,9 @@ const SignUpPage = () => {
   const navigate = useNavigate();
 
   // The entire page's background image:
-  const bgImage = lbl; // or banners[8]?.imageUrl
+  const bgImage = lbl;
   // Images to stack on the right side:
   const bottomImage = lbj;
-  const topImage = jki;
 
   const handleSignUp = async (e) => {
     e.preventDefault();
@@ -181,7 +180,7 @@ const SignUpPage = () => {
             />
             {/* Top image */}
             <img
-              src={topImage}
+              src={jki}
               alt="Top image"
               className="absolute w-1/2 h-auto object-cover rounded-lg shadow-lg"
               style={{
