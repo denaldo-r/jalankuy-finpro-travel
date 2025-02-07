@@ -5,7 +5,7 @@ import useAuth from "../../hooks/useAuth";
 import useForm from "../../hooks/local/useForm";
 import useBanner from "../../hooks/useBanner";
 import lbl from "../../assets/login-background-logo.jpg";
-import lki from "../../assets/jalan-kuy-icon.png";
+import jki from "../../assets/jalan-kuy-icon.png";
 import lbj from "../../assets/login-background.jpg";
 
 const SignUpPage = () => {
@@ -26,7 +26,7 @@ const SignUpPage = () => {
   const bgImage = lbl; // or banners[8]?.imageUrl
   // Images to stack on the right side:
   const bottomImage = lbj;
-  const topImage = banners[8]?.imageUrl || lki;
+  const topImage = jki;
 
   const handleSignUp = async (e) => {
     e.preventDefault();
