@@ -22,11 +22,6 @@ const SignUpPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // The entire page's background image:
-  const bgImage = lbl;
-  // Images to stack on the right side:
-  const bottomImage = lbj;
-
   const handleSignUp = async (e) => {
     e.preventDefault();
     const success = await register(values);
@@ -52,7 +47,7 @@ const SignUpPage = () => {
     <section
       className="min-h-screen w-full bg-center bg-cover bg-no-repeat flex items-center justify-center"
       style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url(${lbl})`,
       }}
     >
       {/* 
@@ -169,7 +164,7 @@ const SignUpPage = () => {
           <div className="relative w-[80%] h-[400px]">
             {/* Bottom image */}
             <img
-              src={bottomImage}
+              src={lbj}
               alt="Bottom image"
               className="absolute w-3/4 h-auto object-cover rounded-lg shadow-md"
               style={{
