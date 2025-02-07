@@ -5,7 +5,6 @@ import useAuth from "../../hooks/useAuth";
 import useForm from "../../hooks/local/useForm";
 import useBanner from "../../hooks/useBanner";
 import lbl from "../../assets/login-background-logo.jpg";
-import jki from "../../assets/jalan-kuy-icon.png";
 import lbj from "../../assets/login-background.jpg";
 
 const SignUpPage = () => {
@@ -173,18 +172,7 @@ const SignUpPage = () => {
                 zIndex: 1,
               }}
             />
-            {/* Top image */}
-            <img
-              src={jki}
-              alt="Top image"
-              className="absolute w-1/2 h-auto object-cover rounded-lg shadow-lg"
-              style={{
-                top: "40%",
-                left: "50%",
-                transform: "translate(-50%, -30%)",
-                zIndex: 2,
-              }}
-            />
+
             {/* Optional text overlay */}
             <div
               className="absolute bottom-4 left-0 right-0 text-center text-blue-600 font-bold text-3xl"
