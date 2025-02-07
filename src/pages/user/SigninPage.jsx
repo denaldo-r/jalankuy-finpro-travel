@@ -4,6 +4,8 @@ import { Lock, Mail } from "lucide-react";
 import useAuth from "../../hooks/useAuth";
 import useForm from "../../hooks/local/useForm";
 import useBanner from "../../hooks/useBanner";
+import jk2 from "../../assets/logo-Jalan-kuy-2.png";
+import lbl from "../../assets/login-background-logo.jpg";
 
 const SigninPage = () => {
   const { values, handleChange } = useForm({
@@ -18,8 +20,8 @@ const SigninPage = () => {
   const navigate = useNavigate();
 
   // Example: two distinct images you want stacked
-  const topImage = banners[8]?.imageUrl || "/src/assets/logo-jalan-kuy-2.png";
-  const bgImage = "/src/assets/login-background-logo.jpg";
+  const topImage = jk2;
+  const bgImage = lbl;
 
   const handleSubmit = async (e) => {
     e.preventDefault();

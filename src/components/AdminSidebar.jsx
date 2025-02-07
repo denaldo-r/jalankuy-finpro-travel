@@ -12,6 +12,8 @@ import {
   HandCoins,
 } from "lucide-react";
 import useAuth from "../hooks/useAuth";
+import ljk from "/src/assets/logo-Jalan-kuy-2.png";
+import lki from "/src/assets/Jalan-kuy-icon.png";
 
 const AdminSidebar = ({ isExpanded, setIsExpanded }) => {
   const activeClassName = "bg-blue-500 text-white"; // Active link style
@@ -53,11 +55,7 @@ const AdminSidebar = ({ isExpanded, setIsExpanded }) => {
         <div className="flex items-center">
           <img
             // Change logo based on isExpanded:
-            src={
-              isExpanded
-                ? "/src/assets/logo-Jalan-kuy-2.png" // Full logo when expanded
-                : "/src/assets/Jalan-kuy-icon.png" // Alternate logo when collapsed
-            }
+            src={isExpanded ? ljk : lki}
             alt="Logo"
             className={isExpanded ? "w-40 h-20" : "w-7 h-7"}
           />

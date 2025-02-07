@@ -1,4 +1,5 @@
 import React from "react";
+import jk2 from "../assets/logo-Jalan-kuy-2.png";
 import {
   Facebook,
   Twitter,
@@ -25,11 +26,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Brand Column (Left) */}
           <div>
-            <img
-              src="/src/assets/logo-Jalan-kuy-2.png"
-              alt="Jalankuy"
-              className="h-20 mb-6"
-            />
+            <img src={jk2} alt="Jalankuy" className="h-20 mb-6" />
             <p className="text-yellow-200 mb-4">
               Web Travel Booking Platform for Your Trip Needs
             </p>

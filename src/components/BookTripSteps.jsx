@@ -1,5 +1,7 @@
 import React from "react";
 import { CheckCircle, CreditCard, MapPin } from "lucide-react";
+import gr from "../assets/greece.png";
+import rm from "../assets/rome.jpg";
 
 const steps = [
   {
@@ -69,7 +71,7 @@ const BookTripSteps = () => {
             {/* Trip Image */}
             <div className="rounded-xl overflow-hidden">
               <img
-                src="/src/assets/greece.png"
+                src={gr}
                 alt="Trip to Greece"
                 className="w-full h-48 object-cover"
               />
@@ -94,7 +96,7 @@ const BookTripSteps = () => {
           <div className="absolute bottom-0 right-0 translate-x-10 translate-y-10 bg-white rounded-2xl shadow-md p-4 w-56">
             <div className="flex items-center gap-2">
               <img
-                src="/src/assets/rome.jpg"
+                src={rm}
                 alt="Trip to Rome"
                 className="w-10 h-10 rounded-full object-cover"
               />

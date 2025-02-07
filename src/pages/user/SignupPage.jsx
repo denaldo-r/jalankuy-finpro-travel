@@ -4,6 +4,9 @@ import { Lock, Mail, User, Phone } from "lucide-react";
 import useAuth from "../../hooks/useAuth";
 import useForm from "../../hooks/local/useForm";
 import useBanner from "../../hooks/useBanner";
+import lbl from "../../assets/login-background-logo.jpg";
+import lki from "../../assets/jalan-kuy-icon.png";
+import lbj from "../../assets/login-background.jpg";
 
 const SignUpPage = () => {
   const { values, handleChange } = useForm({
@@ -20,10 +23,10 @@ const SignUpPage = () => {
   const navigate = useNavigate();
 
   // The entire page's background image:
-  const bgImage = "/src/assets/login-background-logo.jpg"; // or banners[8]?.imageUrl
+  const bgImage = lbl; // or banners[8]?.imageUrl
   // Images to stack on the right side:
-  const bottomImage = "/src/assets/login-background.jpg";
-  const topImage = banners[8]?.imageUrl || "/src/assets/jalan-kuy-icon.png";
+  const bottomImage = lbj;
+  const topImage = banners[8]?.imageUrl || lki;
 
   const handleSignUp = async (e) => {
     e.preventDefault();
