@@ -5,6 +5,7 @@ import { useCartContext } from "../../context/CartContext";
 import useCategories from "../../hooks/useCategory";
 import MobileNavigation from "./MobileNavigation";
 import useAuth from "../../hooks/useAuth";
+import lg from "../../assets/logo-Jalan-kuy.png";
 
 const Navbar = () => {
   // State for mobile menu, login, and profile dropdown
@@ -72,7 +73,7 @@ const Navbar = () => {
         <div className="absolute left-1/2 transform -translate-x-1/2">
           <Link to="/" className="flex items-center">
             <img
-              src="/src/assets/logo-Jalan-kuy.png"
+              src={lg}
               alt="Jalankuy Logo"
               className="h-15" // Adjust height as needed
             />
